@@ -9,5 +9,5 @@ Meu nome é João Vitor, e sou estudante de Análise e Desenvolvimento de Sistem
 Neste repositório, você encontrará informações detalhadas sobre minha formação acadêmica, experiência profissional, habilidades técnicas, projetos e qualquer outra informação relevante para meu perfil profissional. Sinta-se à vontade para explorar os arquivos e descobrir mais sobre minha jornada até agora.
 
 <p align="center">
-  [ [Ir para o CV online](https://jvitor-alol.github.io/Curriculum-Vitae/) ]
+  [Ir para o CV online](https://jvitor-alol.github.io/Curriculum-Vitae/)
 </p>
