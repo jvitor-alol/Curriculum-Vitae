@@ -1,7 +1,7 @@
 # Curriculum-Vitae
 Bem-vindo ao repositório do meu currículo online! Este é o lugar onde mantenho uma versão acessível e atualizada do meu currículo, disponível para qualquer pessoa interessada em conhecer minha experiência, habilidades e projetos.
 
-## Sobre Mim
+## Sobre mim
 Meu nome é João Vitor, e sou estudante de Análise e Desenvolvimento de Sistemas. Tenho uma paixão por tecnologia e estou constantemente buscando oportunidades para aprender e crescer profissionalmente.
 
 ## Conteúdo
