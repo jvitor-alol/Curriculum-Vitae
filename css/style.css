@@ -296,6 +296,11 @@ a:hover {
     border-bottom-color: #800080;
 }
 
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Media Querries*/
 @media screen and (max-width:823px) {
