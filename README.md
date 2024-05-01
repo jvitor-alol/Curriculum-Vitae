@@ -1,6 +1,6 @@
 # ⭐ Boas vindas
 
-Bem-vindes ao repositório do meu currículo online! Este é o lugar onde mantenho uma versão acessível e atualizada do meu currículo, disponível para qualquer pessoa interessada em conhecer minha experiência, habilidades e projetos.
+Bem-vindes ao repositório do meu [currículo online](https://jvitor-alol.github.io/Curriculum-Vitae/)! Este é o lugar onde mantenho uma versão acessível e atualizada do meu currículo, disponível para qualquer pessoa interessada em conhecer minha experiência, habilidades e projetos.
 
 Neste repositório, você encontrará informações detalhadas sobre minha formação acadêmica, experiência profissional, habilidades técnicas, projetos e qualquer outra informação relevante para meu perfil profissional. Sinta-se à vontade para explorar os arquivos e descobrir mais.
 
@@ -16,13 +16,14 @@ Tenho conhecimentos nas tecnologias:
 
 <div id="icones" align="center" style="padding: 15px; border: 1px solid #ffffff;">
     <img src="assets/icons/icons8-python.svg" height="60px">
-    <img src="assets/icons/Tux.svg" height="60px">
     <img src="assets/icons/icons8-git.svg" height="60px">
     <img src="assets/icons/icons8-docker.svg" height="60px">
-    <img src="assets/icons/icons8-mysql-logo.svg" height="60px">
-    <img src="assets/icons/icons8-postgresql.svg" height="60px">
+    <img src="assets/icons/Tux.svg" height="60px">
     <img src="assets/icons/icons8-amazon-web-services.svg" height="60px">
     <a title="Apache Software Foundation, Apache License 2.0 &lt;http://www.apache.org/licenses/LICENSE-2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Apache_Spark_logo.svg"><img height="60px" alt="Apache Spark logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/512px-Apache_Spark_logo.svg.png"></a>
+    <a href="https://jupyter.org/"><img width="60" alt="Jupyter logo" src="https://jupyter.org/assets/homepage/main-logo.svg"></a>
+    <img src="assets/icons/icons8-mysql-logo.svg" height="60px">
+    <img src="assets/icons/icons8-postgresql.svg" height="60px">
     <br />
     <img src="assets/icons/icons8-html-5.svg" height="60px">
     <img src="assets/icons/icons8-css3.svg" height="60px">
