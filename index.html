@@ -24,11 +24,45 @@
                     <p class="career">Engenheiro de Dados</p>
                 </div>
                 <div class="contact-info">
-                    <h3 class="main-title">Dados e contato</h3>
+                    <h3 class="main-title">Informações</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            <span id="idade"></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                            Solteiro
+                        </li>
+                        <li>
+                            <i class="fa fa-map"></i>
+                            São Paulo/SP
+                        </li>
+                    </ul>
+
+                    <!-- Calcular idade automaticamente -->
+                    <script>
+                        function calcularIdade(dataNascimento) {
+                            var hoje = new Date();
+                            var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+                            var mes = hoje.getMonth() - dataNascimento.getMonth();
+                            if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+                                idade--;
+                            }
+                            return idade + " anos";
+                        }
+
+                        var dataNascimento = new Date('1998-12-22');
+
+                        var idadeSpan = document.getElementById('idade');
+                        idadeSpan.textContent = calcularIdade(dataNascimento);
+                    </script>
+
+                    <h3 class="main-title">Contato</h3>
                     <ul>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:jvitor.alol+contato@gmail.com">jvitor.alol+contato@gmail.com</a>
+                            <a href="mailto:jvitor.alol+contato@gmail.com">jvitor.alol@gmail.com</a>
                         </li>
                         <li>
                             <i class="fa fa-linkedin"></i>
@@ -38,14 +72,6 @@
                             <i class="fa fa-github"></i>
                             <a href="https://github.com/jvitor-alol" target="_blank">jvitor-alol</a>
                         </li>
-                        <li>
-                            <i class="fa fa-map"></i>
-                            São Paulo/SP
-                        </li>
-                        <!--                         <li>
-                            <i class="fa fa-heart"></i>
-                            Solteiro
-                        </li> -->
                         <li>
                             <i class="fa fa-certificate"></i>
                             <a href="https://www.credly.com/users/joao-vitor-alves-de-oliveira/badges"
@@ -93,13 +119,13 @@
                             </div>
                         </li>
                         <li>
-                            <p class="skill-title">Git e GitHub</p>
+                            <p class="skill-title">Git / GitHub</p>
                             <div class="progress-bar">
                                 <div class="progress git-progress"></div>
                             </div>
                         </li>
                         <li>
-                            <p class="skill-title">HTML/CSS</p>
+                            <p class="skill-title">HTML / CSS</p>
                             <div class="progress-bar">
                                 <div class="progress html-css-progress"></div>
                             </div>
@@ -127,6 +153,7 @@
                         <li>
                             <p class="skill-title">Inglês Avançado (C2 Proficient)</p>
                         </li>
+                    </ul>
                 </div>
                 <div class="projects-section">
                     <h3 class="main-title">Projetos</h3>
@@ -136,7 +163,7 @@
                             iStudio Data & Analytics. </p>
                         <ul>
                             <li>
-                                <i class="fa fa-github"></i>
+                                <i class="fa fa-code"></i>
                                 <a href="https://github.com/jvitor-alol/Analise-de-Filmes-Sci-Fi-e-Fantasia"
                                     target="_blank">Repositório</a>
                             </li>
@@ -162,6 +189,10 @@
                         com planos futuros de expandir a quantidade de serviços do meu servidor doméstico.<br />
                     </p>
                 </section>
+
+                <div class="lang-select">
+                    <p><b>PT</b> / <a href="index_en.html">EN</a></p>
+                </div>
 
                 <section class="experince sect">
                     <h2 class="right-title">Experiência</h2>

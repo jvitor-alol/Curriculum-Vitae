@@ -226,6 +226,19 @@ a:hover {
     transform: translateY(-50%);
 }
 
+.right-section {
+    position: relative;
+}
+
+.lang-select {
+    color: #A3A3A3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 999;
+}
+
 .para {
     line-height: 1.6rem;
     color: #718096;

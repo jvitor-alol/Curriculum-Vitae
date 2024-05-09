@@ -28,13 +28,45 @@
                     </p>
                 </div>
                 <div class="contact-info">
-                    <h3 class="main-title">
-                        Info and contact
-                    </h3>
+                    <h3 class="main-title">Info</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            <span id="idade"></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-heart"></i>
+                            Single
+                        </li>
+                        <li>
+                            <i class="fa fa-map"></i>
+                            São Paulo/SP (Brazil)
+                        </li>
+                    </ul>
+
+                    <!-- Calcular idade automaticamente -->
+                    <script>
+                        function calcularIdade(dataNascimento) {
+                            var hoje = new Date();
+                            var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+                            var mes = hoje.getMonth() - dataNascimento.getMonth();
+                            if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+                                idade--;
+                            }
+                            return idade + " years old";
+                        }
+
+                        var dataNascimento = new Date('1998-12-22');
+
+                        var idadeSpan = document.getElementById('idade');
+                        idadeSpan.textContent = calcularIdade(dataNascimento);
+                    </script>
+
+                    <h3 class="main-title">Contact</h3>
                     <ul>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:jvitor.alol+contato@gmail.com">jvitor.alol+contato@gmail.com</a>
+                            <a href="mailto:jvitor.alol+contato@gmail.com">jvitor.alol@gmail.com</a>
                         </li>
                         <li>
                             <i class="fa fa-linkedin"></i>
@@ -45,14 +77,6 @@
                             <a href="https://github.com/jvitor-alol" target="_blank">
                                 jvitor-alol
                             </a>
-                        </li>
-                        <li>
-                            <i class="fa fa-map"></i>
-                            Sao Paulo-SP
-                        </li>
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            Single
                         </li>
                         <li>
                             <i class="fa fa-certificate"></i>
@@ -104,14 +128,14 @@
                         </li>
                         <li>
                             <p class="skill-title">
-                                Git from GitHub
+                                Git / GitHub
                             </p>
                             <div class="progress-bar">
                                 <div class="progress git-progress"></div>
                             </div>
                         </li>
                         <li>
-                            <p class="skill-title">HTML/CSS</p>
+                            <p class="skill-title">HTML / CSS</p>
                             <div class="progress-bar">
                                 <div class="progress html-css-progress"></div>
                             </div>
@@ -134,7 +158,7 @@
                     <h3 class="main-title">
                         Languages
                     </h3>
-                    < ul>
+                    <ul>
                         <li>
                             <p class="skill-title">
                                 Native Portuguese
@@ -145,7 +169,7 @@
                                 Advanced English (C2 Proficient)
                             </p>
                         </li>
-                        </ul>
+                    </ul>
                 </div>
                 <div class="projects-section">
                     <h3 class="main-title">
@@ -162,7 +186,7 @@
                         </p>
                         <ul>
                             <li>
-                                <i class="fa fa-github"></i>
+                                <i class="fa fa-code"></i>
                                 <a href="https://github.com/jvitor-alol/Analise-de-Filmes-Sci-Fi-e-Fantasia"
                                     target="_blank">
                                     Repository
@@ -192,6 +216,10 @@
                         containers, with future plans to expand the number of services on my home server.
                     </p>
                 </section>
+
+                <div class="lang-select">
+                    <p><a href="index.html">PT</a> / <b>EN</b></p>
+                </div>
 
                 <section class="experince sect">
                     <h2 class="right-title">
