@@ -226,15 +226,11 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.right-section {
-    position: relative;
-}
-
 .lang-select {
     color: #A3A3A3;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10;
+    right: 10;
     padding: 10px;
     z-index: 999;
 }
