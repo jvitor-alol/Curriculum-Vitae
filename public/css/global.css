@@ -45,7 +45,7 @@ a:hover {
 }
 
 .left-content {
-    padding: 2rem 3rem;
+    padding: calc(2rem - 10px) 3rem 2rem 3rem;
 }
 
 .profile {
@@ -228,11 +228,7 @@ a:hover {
 
 .lang-select {
     color: #A3A3A3;
-    position: absolute;
-    top: 10;
-    right: 10;
-    padding: 10px;
-    z-index: 999;
+    padding: 10px 0px 0px 10px;
 }
 
 .para {
@@ -307,6 +303,7 @@ a:hover {
 
 .badges {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }

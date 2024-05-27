@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../../public/css/global.css"">
+  </head>
+
+  <body>
+    <main class="main-content">
+      <section class="left-section">
+        <div class="lang-select">
+          <p><b>PT</b> / <a href="../home-en/index.html">EN</a></p>
+        </div>
+        <div class="left-content">
+          <div class="profile">
+            <div class="image">
+              <img
+                src="../../../public/assets/images/minha_foto.jpg"
+                alt="Foto de Perfil"
+              />
+            </div>
+            <h2 class="name">João Vitor Alves de Oliveira</h2>
+            <p class="career">Engenheiro de Dados</p>
+          </div>
+          <div class="contact-info">
+            <h3 class="main-title">Informações</h3>
+            <ul>
+              <li>
+                <i class="fa fa-calendar"></i>
+                <span id="idade"></span>
+              </li>
+              <li>
+                <i class="fa fa-heart"></i>
+                Solteiro
+              </li>
+              <li>
+                <i class="fa fa-map"></i>
+                São Paulo/SP
+              </li>
+            </ul>
+
+            <!-- Calcular idade automaticamente -->
+            <script>
+              function calcularIdade(dataNascimento) {
+                var hoje = new Date();
+                var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+                var mes = hoje.getMonth() - dataNascimento.getMonth();
+                if (
+                  mes < 0 ||
+                  (mes === 0 && hoje.getDate() < dataNascimento.getDate())
+                ) {
+                  idade--;
+                }
+                return idade + " anos";
+              }
+
+              var dataNascimento = new Date("1998-12-22");
+
+              var idadeSpan = document.getElementById("idade");
+              idadeSpan.textContent = calcularIdade(dataNascimento);
+            </script>
+
+            <h3 class="main-title">Contato</h3>
+            <ul>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:jvitor.alol+contato@gmail.com"
+                  >jvitor.alol@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/jvitoralol" target="_blank"
+                  >in/jvitoralol</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-github"></i>
+                <a href="https://github.com/jvitor-alol" target="_blank"
+                  >jvitor-alol</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-certificate"></i>
+                <a
+                  href="https://www.credly.com/users/joao-vitor-alves-de-oliveira/badges"
+                  target="_blank"
+                  >Credly</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h3 class="main-title">Habilidades</h3>
+            <ul>
+              <li>
+                <p class="skill-title">Python</p>
+                <div class="progress-bar">
+                  <div class="progress python-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">SQL</p>
+                <div class="progress-bar">
+                  <div class="progress sql-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">AWS</p>
+                <div class="progress-bar">
+                  <div class="progress aws-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Docker</p>
+                <div class="progress-bar">
+                  <div class="progress docker-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Spark</p>
+                <div class="progress-bar">
+                  <div class="progress spark-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Linux</p>
+                <div class="progress-bar">
+                  <div class="progress linux-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Git / GitHub</p>
+                <div class="progress-bar">
+                  <div class="progress git-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">HTML / CSS</p>
+                <div class="progress-bar">
+                  <div class="progress html-css-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">C#</p>
+                <div class="progress-bar">
+                  <div class="progress cs-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">C</p>
+                <div class="progress-bar">
+                  <div class="progress c-progress"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h3 class="main-title">Idiomas</h3>
+            <ul>
+              <li>
+                <p class="skill-title">Português Nativo</p>
+              </li>
+              <li>
+                <p class="skill-title">Inglês Avançado (C2 Proficient)</p>
+              </li>
+            </ul>
+          </div>
+          <div class="projects-section">
+            <h3 class="main-title">Projetos</h3>
+            <div class="project">
+              <h6 class="sub-title">
+                ETL e Análise Histórica de Filmes de Sci-Fi e Fantasia
+              </h6>
+              <p class="sub-para">
+                Projeto desenvolvido como desafio final do programa de bolsas
+                Compass UOL iStudio Data & Analytics.
+              </p>
+              <ul>
+                <li>
+                  <i class="fa fa-code"></i>
+                  <a
+                    href="https://github.com/jvitor-alol/Analise-de-Filmes-Sci-Fi-e-Fantasia"
+                    target="_blank"
+                    >Repositório</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="right-main-content">
+          <section class="about sect">
+            <h2 class="right-title">Sobre Mim</h2>
+            <p class="para">
+              Sou uma pessoa meticulosa e com o desejo contínuo de aprender e
+              aprimorar minhas habilidades. Quando surgem desafios, eu os encaro
+              de frente. Não tenho medo de cometer erros, pois os vejo como uma
+              parte natural da minha contínua jornada de crescimento
+              profissional e pessoal. <br />
+              Em 2017, alcancei um marco significativo ao garantir a primeira
+              posição no curso de Engenharia da Computação no Instituto Federal
+              de Educação, Ciência e Tecnologia de São Paulo - Campus Birigui.
+              Lá, tive a oportunidade de desenvolver um projeto de iniciação
+              científica e de apresentar meu trabalho em um congresso do CONICT.
+              <br />
+              Atualmente tenho me dedicado a um projeto de HomeLab, no qual
+              estou aprendendo a fazer self-host de aplicações como Jellyfin,
+              Nextcloud, Nginx e PiHole na forma de containers Docker, com
+              planos futuros de expandir a quantidade de serviços do meu
+              servidor doméstico.<br />
+            </p>
+          </section>
+
+          <section class="experince sect">
+            <h2 class="right-title">Experiência</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Compass UOL</h5>
+                <p class="para">12/2023 - 05/2024</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">
+                    Estagiário - AWS Cloud Data Engineering
+                  </h5>
+                  <p class="para">
+                    O programa de bolsa consistia em sprints quinzenais focadas
+                    no aprendizado e desenvolvimento prático. Abordava
+                    linguagens como <b>SQL</b> (MySQL/PostgreSQL) e
+                    <b>Python</b> (ETL, PySpark, Jupyter, Pandas e Numpy),
+                    componentes de Cloud como <b>IAM</b>, <b>EC2</b>, <b>S3</b>,
+                    <b>CloudWatch</b>, <b>Lambda</b> e <b>Lake Formation</b>,
+                    além de serviços analíticos como <b>Glue</b>,
+                    <b>Athena</b> e <b>QuickSight</b>. Também incluía tópicos
+                    como containerização de aplicativos com <b>Docker</b>,
+                    processamento de dados com <b>Spark</b>, e visualização e
+                    <b>modelagem de dados</b>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Instituto Federal de São Paulo, IFSP</h5>
+                <p class="para">03/2017 - 11/2017</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Bolsista de Iniciação Científica</h5>
+                  <p class="para">
+                    O projeto era composto por pesquisas corroboradas com
+                    inúmeras referências bibliográficas, desenvolvimento de
+                    relatórios sobre o desenvolvimento do projeto e uma
+                    abordagem abrangente na investigação da plataforma TerraMA2.
+                    Destacou-se a
+                    <b>iniciativa</b> de implantação de um sistema de
+                    monitoramento e emissão de alertas a desastres naturais.
+                    Além disso, os resultados foram compartilhados por meio da
+                    elaboração de um resumo expandido, que foi apresentado na
+                    forma de pôster como parte do 8° Congresso de Iniciação
+                    Científica e Tecnológica (CONICT) na 1ª Jornada do IFSP
+                    realizada no Câmpus de Cubatão.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Vigor Alimentos S/A</h5>
+                <p class="para">05/2016 - 01/2017</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Estagiário de vendas</h5>
+                  <p class="para">
+                    Durante meu estágio, fui desafiado a aprimorar minhas
+                    <b>habilidades interpessoais</b>. Ao realizar visitas
+                    semanais a diversos pontos de venda, como padarias e
+                    mercados, e gerenciar o reabastecimento conforme as demandas
+                    dos clientes por produtos como leite, manteiga e iogurtes,
+                    desenvolvi significativamente minhas habilidades de
+                    <b>comunicação</b> e <b>resolução de problemas</b>. A
+                    interação constante com os clientes e a necessidade de
+                    encontrar soluções em tempo real me proporcionaram uma
+                    experiência valiosa no desenvolvimento dessas competências
+                    essenciais para o ambiente profissional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="education sect">
+            <h2 class="right-title">Formação</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">SENAC São Paulo</h5>
+                <p class="para">2022 - 2025</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">
+                    Análise e Desenvolvimento de Sistemas
+                  </h5>
+                  <p class="para">
+                    Ao longo da graduação, fui selecionado para o programa de
+                    bolsas Compass UOL iStudio Data & Analytics, com duração de
+                    5 meses. Nesse período, adquiri experiência prática
+                    significativa com diversas tecnologias e me aprofundei na
+                    área de engenharia de dados.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">
+                  Instituto Federal de São Paulo, IFSP (Campus Birigui)
+                </h5>
+                <p class="para">2017 - 2018 (Incompleto)</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">
+                    Bacharelado em Engenharia da Computação
+                  </h5>
+                  <p class="para">
+                    Aprovado em 1º lugar pelo SISU, garanti uma bolsa de
+                    iniciação científica desde o primeiro semestre na
+                    universidade. Apresentei meu trabalho na 1ª Jornada do IFSP
+                    realizada no campus de Cubatão ao final do ano. Além disso,
+                    demonstrei minhas habilidades de programação ao participar
+                    da XXII Maratona de Programação SBC - Primeira Fase no mesmo
+                    ano.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="awards sect">
+            <h2 class="right-title">Certificados</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Amazon Web Services</h5>
+                <p class="para">Maio de 2024</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Certified Cloud Practitioner</h5>
+                  <p class="para">
+                    Valida conhecimentos sobre serviços e práticas fundamentais
+                    de computação em nuvem na AWS.
+                  </p>
+                  <li class="fa fa-link"></li>
+                  <a
+                    class="credential-link"
+                    href="https://cp.certmetrics.com/amazon/en/public/verify/credential/7e176bda83534d3ba48a6dbb40f1f98e"
+                    target="_blank"
+                    >Exibir credencial</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">EF SET</h5>
+                <p class="para">Dezembro de 2023</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">
+                    English Certificate (C2 Proficient)
+                  </h5>
+                  <p class="para">
+                    Certificado com uma pontuação de 98/100 na prova de
+                    certificação EF SET, atestando proficiência em inglês.
+                  </p>
+                  <li class="fa fa-link"></li>
+                  <a
+                    class="credential-link"
+                    href="https://www.efset.org/cert/GfMzTt"
+                    target="_blank"
+                    >Exibir credencial</a
+                  >
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="badges">
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="496f1973-a5f4-4cf4-9e2d-23b49b5ce247"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                async
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="4a954e43-3b14-48e3-ae3e-0ab241b3daea"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                async
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="96878376-cd2f-4625-9299-936b3578049c"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                async
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="847e87aa-cd59-4612-8aab-3b8a6c07c237"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                async
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="bdd8167c-e166-44f1-965d-51dd15b4c47a"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <script
+                type="text/javascript"
+                async
+                src="//cdn.credly.com/assets/utilities/embed.js"
+              ></script>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
