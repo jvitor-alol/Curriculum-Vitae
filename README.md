@@ -27,6 +27,7 @@ Tenho conhecimentos nas tecnologias:
     <br />
     <img src="assets/icons/icons8-html-5.svg" height="60px">
     <img src="assets/icons/icons8-css3.svg" height="60px">
+    <img src="assets/icons/icons8-bootstrap.svg" height="60px">
     <img src="assets/icons/icons8-c-programming.svg" height="60px">
     <img src="assets/icons/icons8-c-sharp-logo.svg" height="60px">
     <a title="Microsoft, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Microsoft_.NET_logo.svg"><img height="60px" alt="Microsoft .NET logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/256px-Microsoft_.NET_logo.svg.png"></a>
