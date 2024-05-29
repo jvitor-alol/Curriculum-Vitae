@@ -14,7 +14,7 @@ Meu nome é **João Vitor**, sou de São Paulo/SP e estou cursando o 4º semestr
 
 Tenho conhecimentos nas tecnologias:
 
-<div id="icones" align="center" style="padding: 15px; border: 1px solid #ffffff;">
+<div id="icones" align="center" style="padding: 15px;">
     <img src="./docs/assets/images/icons8-python.svg" height="60px">
     <img src="./docs/assets/images/icons8-git.svg" height="60px">
     <img src="./docs/assets/images/icons8-docker.svg" height="60px">
